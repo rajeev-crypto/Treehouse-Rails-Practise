@@ -1,0 +1,12 @@
+<!-- <h1> Majak chal raha yaha</h1> ye aya controller action se aur title name ka model bana hua he 
+ -->
+
+<%@page.each do |pa| %>
+    <p>
+
+        <%= link_to pa.title, "/pages/#{pa.id}" %>
+    </p>
+
+    <%end%>
+
+        <%= link_to 'New Page','/pages/new' %>
